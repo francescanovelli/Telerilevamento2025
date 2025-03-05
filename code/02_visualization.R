@@ -17,4 +17,3 @@ cl <- colorRampPalette(c("black","dark grey", "light grey"))(100)
 # in questo modo coloro la mia immagine con altri colori
 plot(b2, col=cl)
 
-# ES: fabbrico la mia gamma di colori
