@@ -2,6 +2,8 @@
 
 library(terra)
 library(imageRy)
+install.packages("viridis")
+library(viridis)
 
 # lista dei file
 im.list()
@@ -31,9 +33,13 @@ im.multiframe(x,y)
 
 # per importare diverse bande insieme
 sentdol <- im.import("sentinel.dolomites")
+pairs(sentdol)
 
 # per dare nomi alle foto
 names(sent)<-c("b2-blu", "b3-verde", "b4-rosso", "b8Nir")
 
 # per cancellare i grafici
 dev.off()
+
+# viridis
+plot(sentdol, col=viridis(100))
