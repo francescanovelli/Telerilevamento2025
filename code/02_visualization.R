@@ -41,5 +41,5 @@ names(sent)<-c("b2-blu", "b3-verde", "b4-rosso", "b8Nir")
 # per cancellare i grafici
 dev.off()
 
-# viridis
+# viridis, per cambiare i colori 
 plot(sentdol, col=viridis(100))
