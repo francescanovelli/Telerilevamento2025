@@ -1,2 +1,7 @@
-Abbiamo la possibilità di usare più bande insieme. Questo avviene grazie ad uno schema, detto RGB, in cui ci sono tutti e tre i colori fondamentali. Ovvero rosso, verde e blu, che uniti insieme e quindi sovrapposti 
-creano tutti i colori possibili.
+Abbiamo la possibilità di usare più bande insieme. Questo avviene grazie ad uno schema, detto RGB, in cui ci sono tutti e tre i colori fondamentali. Ovvero rosso, 
+verde e blu, che uniti insieme e quindi sovrapposti creano tutti i colori possibili. Le piante riflettono molto nel NIR, quindi il filtro del NIR cosrrisponderà 
+alle piante. Quindi usando dei filtri NIR si verdranno molto bene e si distingue facilmente le diverse tipologie di vegetazione, dove le parti rosso chiaro sono 
+le sommità delle piante, vediamo anche l'acqua. In base a dove metto il colore infrarosso vicino è quello che mi fa variare il colore dell'immagine, quindi le altre 
+bande dove sono messe conta ben poco. Il suolo nudo in questi casi tende a diventare giallo.
+
+Gli indici spettrali sono due o più bande montate insieme.
