@@ -43,3 +43,4 @@ dev.off()
 
 # viridis, per cambiare i colori 
 plot(sentdol, col=viridis(100))
+
