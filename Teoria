@@ -5,3 +5,17 @@ le sommità delle piante, vediamo anche l'acqua. In base a dove metto il colore 
 bande dove sono messe conta ben poco. Il suolo nudo in questi casi tende a diventare giallo.
 
 Gli indici spettrali sono due o più bande montate insieme.
+
+La riflettanza = rapporto della luce del sole che vienere riflessa e quella che viene assorbita. Se tutto vienre riflesso la riflettanza è uguale a 1 se invece viene
+tutto assorbito allora la riflettanza è 0. Quindi il range della riflettanza va da 0 a 1. In un'immagine sarellitare creare un immagine in cui ogni pixel ha un numero 
+diverso dal pixel vicino diventa ingestibile. Per ovviare questo problema noi facciamo diventare il numero decimale in numero intero. Si sfrutta così una componente 
+del computer detto bit. Un bit è una singola info all'interno del computer, con un bit ho due info possibili o 0 o 1. Con due bit ho quindi 4 info possibili, con 3 
+bit ho 8 combinazioni possibili... Quindi molte immagini sono fatte riscalate con 256 valori al posto di usare la virgola e quindi uso 8 bit. Questa è una risoluzione 
+radiometrica 
+
+# Indici spettrali #
+DVI - indice di differenza vegetale
+  >In un albero sano la pianta riflette moltissimo nell'infrarosso vicino, quindi il NIR è uguale, in un immagine a 8 bit, mentre la riflettanza nel red è pari a 0. 
+   Il DVI è la differenza tra la riflettanza nel rosso cioè in questo caso 255-0=255.
+  >In un albero stressato riflette di meno nel NIR e avrà un riflettanza pari solo a 100, mentre nel rosso la pianta non assorbirà più del tutto e quindi la riflettanza
+   è pari al 30. In questo caso il DVI sarà 100-30=70
