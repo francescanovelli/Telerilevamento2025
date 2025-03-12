@@ -44,3 +44,8 @@ dev.off()
 # viridis, per cambiare i colori 
 plot(sentdol, col=viridis(100))
 
+# creo un immagine con i colori naturali 
+im.plotRGB(sentdol, r=3, g=2, b=1)
+
+# colori falsi, quindi aggiungo anche l'infrarosso vicino
+im.plotRGB(sentdol, r=4, g=3, b=2)
