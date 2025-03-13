@@ -51,4 +51,5 @@ Per passare da un sistema all'altro con una trasformazione detta trasformazione 
     5. Rotazione sulla Y
     6. Rotazione sulla Z
 
+EPSG sta per european petroleum survey group, per ogni singolo sistema di riferimento c'è un codice specifico. 
 
