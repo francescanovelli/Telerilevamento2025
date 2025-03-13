@@ -18,4 +18,37 @@ DVI - indice di differenza vegetale
   >In un albero sano la pianta riflette moltissimo nell'infrarosso vicino, quindi il NIR è uguale, in un immagine a 8 bit, mentre la riflettanza nel red è pari a 0. 
    Il DVI è la differenza tra la riflettanza nel rosso cioè in questo caso 255-0=255.
   >In un albero stressato riflette di meno nel NIR e avrà un riflettanza pari solo a 100, mentre nel rosso la pianta non assorbirà più del tutto e quindi la riflettanza
-   è pari al 30. In questo caso il DVI sarà 100-30=70
+   è pari al 30. In questo caso il DVI sarà 100-30=70.
+
+
+# SISTEMI DI RIFERIMENTO #
+La forma reale della terra non è una forma geometrica, è un Geoide, cioè una superficie equidistanziale, cioè dove la forza di gravità è sempre costante. La terra non 
+è una sfera, la terra serebbe una sfera solo se la gravità fosse uguale in tutti i suoi punti. Non esistono delle concavità all'interno della Terra, la forma è sempre
+convessa. 
+Tralasciando la superficie topografica, la superficie del geoide non può essere usata per fare delle misure, perchè non è geometrica. Per questo viene approssimata ad 
+un ellissoide, perchè per un movimento terrestre attorno all'asse c'è uno schiacciamento verso i poli che dà come forma finale non una sfera ma un ellissoide. 
+Il problema è che le misure fatte sulla superficie dell'ellissoide non corrisponde in tutti i punti alla superficie del geoide: questo fenomento è detto oscillazione
+ellissoidica. Il datum mi indica non solo l'ellissoide a cui sto facendo riferimento ma anche il suo posizionamento sulla Terra. In Europa l'ellissoide è ED50. Negli USA
+utilizzano un altro ellissoide NAD27. I parametri dell'ellissoide sono i due semiassi quello maggiore e quello minore, a seconda dell'ellissoide che usiamo cambiano anche 
+la latitudine e la longitudine a cui facciamo riferimento. 
+La latitudine = si forma tra la normale al punto P e il piano che contiene l'equatore: l'unica superficie in cui la normale al punto P va al centro della sfera, ma la 
+Terra non è una sfera è un ellissoide quindi la normale al punto P incontra l'equatore a un certo punto. La latitudine ha anche un ruolo biologico.
+Anche le coordinate in gradi misurate sull'ellissoide non sono assolute ma necessitano di un datum. 
+Nel 1984 viene lanciata una rete di satelliti, che governano il GPS internazionale. Questo viene integrato all'interno del datum WGS84, grazie a questa rete si risce a 
+misurare tutta la terra dal satellite, in questo modo si può usare un unico datum.
+
+PROIEZIONI, tra le più conosciute c'è quella di Mercatore. Prende la Terra e mette un cilindro tangente all'equatore, poi svolge il clindro. Tutte le zone vicino all'equatore 
+saranno in scala 1:1, mentre più mi allontano più saranno distorte. In questo modo questa proiezione si può usare solo all'equatore. Si opta qundi per un'altra proiezione,
+in cui il cilindro è tangente al meridiano di riferimento. In questo caso, c'è un altro probelma perchè man mano che ci allontaniamo dal meridiano di riferimento ci sono forti 
+distorsioni. Per evitare questo probelma si cambia il meridiano di riferimento, ottendendo così un riferimento locale. Noto come UTM Sistema Traversale Universale di Mercatore. 
+Ogni volta che si misura la distanza dal meridiano centrale in m come x, e la distanza con l'equatore in m come y. Per evitare le coordinate negative si da una falsa origine 
+di 5000m, c'è anche per la y, ma in questo casono basta dire N o S. 
+Per passare da un sistema all'altro con una trasformazione detta trasformazione a 6 parametri Molodensky Helmets:
+    1. Traslazione sulla X
+    2. Traslazione sulla Y
+    3. Traslazione sulla Z
+    4. Rotazione sulla X
+    5. Rotazione sulla Y
+    6. Rotazione sulla Z
+
+
