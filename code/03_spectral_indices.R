@@ -44,4 +44,32 @@ plot(mato2006[[1]])
 
 plot(mato2006[[1]], col=mako(100)) # per cambiare colore
 
-# DVI - indice di differenza vegetale
+# per calcolare il DVI
+dvi1992 = mato1992[[1]] - mato1992[[2]] # NIR - rosso
+plot(dvi1992, col= mako(100))
+
+dvi2006 = mato2006[[1]] - mato2006[[2]] # NIR - rosso
+plot(dvi2006, col= mako(100)) 
+
+# immagini con diversi livelli di risoluzione radiometrica
+
+# DVI 8 bit: range (0-255)          
+# max: NIR - rosso = 255-0 = 255
+# min: rosso - NIR = 0-255 = -255
+
+# DVI 4 bit: range (0-15)
+# max: NIR - rosso = 15-0 = 15
+# min: rosso - NIR = 0-15 = -15
+
+# NDVI 8 bit: range (0-255)
+# max: (NIR - rosso) / (NIR + rosso) = (255-0) / (255+0) = 1
+# min: (rosso - NIR) / (rosso + NIR) = (0-255) / (0+255) = -1
+
+# NDVI 4 bit: range (0-15)
+# max: (NIR - rosso) / (NIR + rosso) = (15-0) / (15+0) = 1
+# min: (rosso - NIR) / (rosso + NIR) = (0-15) / (0+15) = -1
+
+ndvi1992 = (mato1992[[1]] - mato1992[[2]]) / (mato1992[[1]] + mato1992[[2]])
+plot (ndvi1992)
+ndvi2006 = (mato2006[[1]] - mato2006[[2]]) / (mato2006[[1]] + mato2006[[2]])
+plot (ndvi2006)
