@@ -1,0 +1,35 @@
+library(terra)
+library(imageRy)
+library(viridis)
+
+im.list()
+
+# immagini della concentrazione di NO2 nel nord Italia
+# nell'immagine c'è anche una legenda che ci fa capire in che parte dell'anno siamo
+# si vede un grande macchia rossa nella pianura padana
+EN01 <- im.import("EN_01.png")
+EN01 <- flip(EN01)
+plot(EN01)
+
+EN13 <- im.import("EN_13.png")
+EN13<- flip(EN13)
+plot(EN13)
+
+im.multiframe(1,2)
+plot(EN01)
+plot(EN13)
+
+# Entrambi le immagini sono in RGB
+# differenza tra le due immagini, scegliendo solo il primo livello di entrambe le immagini
+difEN = EN01[[1]] - EN13[[1]]
+ plot(difEN, col=mako(100))
+
+#--------------------------------------------------------#
+Scioglimento del ghiaccio in Groenlandia
+
+gr= im.import("greenland")
+
+grdif=gr[[4]]-gr[[1]] # 2015-2000
+plot(grdif, col=rocket(100))
+
+# Esportare immagini da R e importare su GitHub
