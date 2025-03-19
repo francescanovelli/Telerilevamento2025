@@ -33,3 +33,14 @@ grdif=gr[[4]]-gr[[1]] # 2015-2000
 plot(grdif, col=rocket(100))
 
 # Esportare immagini da R e importare su GitHub
+
+# scelgo la cartella da usare
+setwd("C:/Users/User/OneDrive/Documenti/UNI") 
+
+# Creo un file PDF usando la funzione pdf()
+pdf("output.pdf")
+plot(grdif)
+dev.off()
+
+
+
