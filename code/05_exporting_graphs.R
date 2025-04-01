@@ -1,8 +1,8 @@
-# This code helps exporting graphs to images
+# Per esportare immagini e grafici da R
 
-# Exporting data from R to GitHub
+# Esportare dati da R a GitHub
 # Selezioniamo la cartella di lavoro
-setwd("C:/Users/march/Desktop/BOLOGNA/II semestre/Telerilevamento geoecologico in R")
+setwd("C/\Users/ser/OneDrive/Documenti/UNI/R")
 
 # Per vedere la cartella selezionata
 getwd()
