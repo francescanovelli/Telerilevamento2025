@@ -53,3 +53,7 @@ Per passare da un sistema all'altro con una trasformazione detta trasformazione 
 
 EPSG sta per european petroleum survey group, per ogni singolo sistema di riferimento c'è un codice specifico. 
 
+# Classificazione
+Pixel che appartengono alla stessa classe sono molto vicini tra di loro in termini di riflettanza. Classifico l'immagine in base hai pixel in entrata così poi da avere tutta 
+l'immagine classificata in base alle classi. 
+ 
