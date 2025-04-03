@@ -55,3 +55,34 @@ p2 = ggplot(tab, aes(x=class, y=y2006, color=class)) +
   ylim(c(0,100)) + coord_flip()
 
 p1/p2
+
+# Solar Orbiter #
+
+solar = im.import("Solar_Orbiter_s_first_views_of_the_Sun_pillars.jpg")
+solarc = im.classify(solar, num_clusters=3)
+# classe 1 = alta
+# classe 2 = media
+# classe 3 = bassa
+
+solarcs = subst(solarc, c(1, 2, 3), c("c3_alta", "c2_media", "c1_bassa"))
+
+im.multiframe(2,1)
+plot(solar)
+plot(solarc)
+
+solarp = freq(solarcs)$count *100 / ncell(solarcs)
+# [1] 37.33349 41.44658 21.21993
+
+# dataframe
+class = c("c1_bassa","c2_media","c3_alta")
+perc = c(37.3, 41.5, 21.2)
+tabsol= data.frame(class, perc)
+
+ggplot(tabsol, aes(x=class, y=perc, fill=class, color=class) + 
+  geom_bar(stat="identity") +
+  ylim(c(0,50)) + coord_flip()
+
+
+
+
+
