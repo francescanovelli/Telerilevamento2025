@@ -1,4 +1,4 @@
 # TELERILEVAMENTO 2025
-
-> Esame
-> 
+## Esame 
+Commentare bene il codice
+Bisogna conoscere bene le funzioni che usiamo, a che pachetto appartengono
