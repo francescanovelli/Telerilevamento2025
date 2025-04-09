@@ -4,6 +4,9 @@ library(terra)
 library(imageRy)
 library(viridis)
 library(ggplot2)
+library(patchwork)
+install.packages("RStoolbox")
+library(RStoolbox)
 
 # Deviazione Standard 
 
@@ -55,6 +58,15 @@ im.multiframe(1,2)
 plot(sd3)
 plot (sd5)
 
-im.ggplot(sd3)
+# per mettere due immagini accanto usando ggplot faccio, usando la library(patchwork)
+p1 = im.ggplot(sd3)
+p2 = im.ggplot (sd5)
+p1 + p2
+
+# Plotto l'originale NIR e la deviazione standard
+p3= im.ggplot(nir)
+p3 + p1
+
+
 
 
