@@ -13,7 +13,7 @@ del computer detto bit. Un bit è una singola info all'interno del computer, con
 bit ho 8 combinazioni possibili... Quindi molte immagini sono fatte riscalate con 256 valori al posto di usare la virgola e quindi uso 8 bit. Questa è una risoluzione 
 radiometrica 
 
-# Indici spettrali #
+## Indici spettrali 
 DVI - indice di differenza vegetale
   >In un albero sano la pianta riflette moltissimo nell'infrarosso vicino, quindi il NIR è uguale, in un immagine a 8 bit, mentre la riflettanza nel red è pari a 0. 
    Il DVI è la differenza tra la riflettanza nel rosso cioè in questo caso 255-0=255.
@@ -21,7 +21,7 @@ DVI - indice di differenza vegetale
    è pari al 30. In questo caso il DVI sarà 100-30=70.
 
 
-# SISTEMI DI RIFERIMENTO #
+## Sistema di Riferimento
 La forma reale della terra non è una forma geometrica, è un Geoide, cioè una superficie equidistanziale, cioè dove la forza di gravità è sempre costante. La terra non 
 è una sfera, la terra serebbe una sfera solo se la gravità fosse uguale in tutti i suoi punti. Non esistono delle concavità all'interno della Terra, la forma è sempre
 convessa. 
@@ -53,7 +53,7 @@ Per passare da un sistema all'altro con una trasformazione detta trasformazione 
 
 EPSG sta per european petroleum survey group, per ogni singolo sistema di riferimento c'è un codice specifico. 
 
-# Classificazione
+## Classificazione
 Pixel che appartengono alla stessa classe sono molto vicini tra di loro in termini di riflettanza. Classifico l'immagine in base hai pixel in entrata così poi da avere tutta 
 l'immagine classificata in base alle classi. 
  
