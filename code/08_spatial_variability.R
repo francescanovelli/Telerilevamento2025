@@ -67,6 +67,58 @@ p1 + p2
 p3= im.ggplot(nir)
 p3 + p1
 
+# Cosa fare in caso di immagini molto grandi
+sent <- im.import("sentinel.png")
+sent = flip(sent)
 
+ncell(sent) * nlyr(sent) #794 * 798 = 2534448
 
+sent_a = aggregate(sent, fact=2)
+# La risoluzione diventa 2,2: ciò significa che aumento di 2 volte per lato, quindi il pixel è grande 4 volte l'originale
+ncell(sent_a) * nlyr(sent_a) # 633612
 
+sent_a5 = aggregate(sent, fact=5)
+ncell(sent_a5) * nlyr(sent_a5) # 101760
+# In questo caso ho fact=5, quindi diminuisco il numero di pixel di 25 volte 
+
+# Make a multiframe and plot in RGB the three image
+im.multiframe(1,3)
+im.plotRGB(sent, r=1, g=2, b=3)
+im.plotRGB(sent_a, r=1, g=2, b=3)
+im.plotRGB(sent_a5, r=1, g=2, b=3)
+
+# Calculating standard deviation
+nir_a = sent_a[[1]]
+sd3_a = focal(nir_a, w=c(3,3), fun="sd")
+dev.off()
+plot(sd3_a)
+
+# Calculate the standard deviation for the factor 5 image
+nir_a5 = sent_a5[[1]]
+sd3_a5 = focal(nir_a5, w=c(3,3), fun="sd")
+plot(sd3_a5)
+
+sd5_a5 = focal(nir_a5, w=c(5,5), fun="sd")
+plot(sd5_a5)
+
+im.multiframe(2,2)
+plot(sd3)
+plot(sd3_a)
+plot(sd3_a5)
+plot(sd5_a5)
+
+p1 = im.ggplot(sd3)
+p2 = im.ggplot(sd3_a)
+p3 = im.ggplot(sd3_a5)
+p4 = im.ggplot(sd5_a5)
+p1 + p2 + p3 + p4
+
+# Varianza
+
+nir = sent[[1]]
+var3 = sd3^2
+plot(var3)
+
+sd5 = focal(nir_a, w=c(5,5), fun="sd")
+var5 = sd5^2
+plot(var5)
