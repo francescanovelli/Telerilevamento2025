@@ -1,3 +1,62 @@
+# TELERILEVAMENTO
+
+Immagini satellitari --> Coprono varie aree del pianeta, ci sono poi molti satelliti che circondano il pianeta e lo fotografano. Oltre ai satelliti ci sono dei Space Debris ovvero detriti in orbita che però non portano info. 
+
+Ci sono molte agenzie che si occupano dello sviluppo della tecnologia e dello studio dell'ambiente attraverso le immagini satellitari. Degli esempi sono l'ESA e la NASA. Un immagine satellitare si basa su dei numeri che indicano la riflettanza, cioè quello che un certo oggetto riflette, anche alcune parti della luce. Ogni singolo numero corrisponde ad un certo colore, noi al numero associamo la riflettanza. 
+
+Il nostro occhio ci permette di vedere uno spazio dello spettro elettromagnetico molto piccolo: dalla luce violetta alla luce rossa. La luce blu ha una lunghezza d'onda molto bassa mentre la luce rossa ha una lunghezza d'onda maggiore. Ogni singola lunghezza d'onda corrisponde ad un colore, e la sua frequenza è inversamente proporzionale. 
+
+Se io uso un oggetto che utilizza delle lunghezze d'onda differenti posso fare altre cose, usando tipo l'infrarosso termico, ovvero quanto quelle parti di un oggetto riflette una lunghezza d'onda e poi convertito in temperatura permettendo di vedere cose che ad occhio nudo non si può.
+Gli insetti vedono il mondo in ultravioletto, mentre i serpenti vedono in infrarosso.
+
+### Riflettanza
+Luce parte del sole, una parte assorbita e una parte riflessa, la parte riflessa viene assorbita da un satellite che ci consegna questi dati.
+Il flusso radiante incidente e la quantità di luce che arriva, una parte rifelessa una parte assorbita. La riflettanza è il rapporto tra la quantità di energia assorbita e quella rilasciata.
+
+### Apex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Abbiamo la possibilità di usare più bande insieme. Questo avviene grazie ad uno schema, detto RGB, in cui ci sono tutti e tre i colori fondamentali. Ovvero rosso, 
 verde e blu, che uniti insieme e quindi sovrapposti creano tutti i colori possibili. Le piante riflettono molto nel NIR, quindi il filtro del NIR cosrrisponderà 
 alle piante. Quindi usando dei filtri NIR si verdranno molto bene e si distingue facilmente le diverse tipologie di vegetazione, dove le parti rosso chiaro sono 
