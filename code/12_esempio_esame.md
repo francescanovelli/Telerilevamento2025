@@ -46,20 +46,18 @@ Il grafico dell'indice:
 
 Siccome le RGB sono composte da bande del visibile, mi aspetto che la correlazione sia alta
 ``` r
-pairs(fires)
+pairs(dust)
 ```
 In questo modo faccio il grafico:
-# ERROREEEEEEEEEEEEE
+
+![pairsout](https://github.com/user-attachments/assets/c16c84dd-dc4f-42f9-be48-75a9d3b17a4e)
 
 ## Indice di visualizzazione con viridis
 Visualizzo il grafico dell'inidce con un altra palette di viridis usando il deguente codice:
 ``` r
-plot(fireindex, col=inferno(100))
+plot(dustindex, col=inferno(100))
 ```
 
 L'immagine è questa:
 
-![inferno](https://github.com/user-attachments/assets/9bab43f4-5374-4e4d-9115-25a1c234fea6)
-
-
-
+![dustinferno](https://github.com/user-attachments/assets/f871cc40-afb8-4d0b-9ce0-b3d6bcb7ace0)
