@@ -26,13 +26,30 @@ L'immagine è la seguente:
 ## Data Analisi
 
 Date le immagini raccolte dal sito, possiamo calcolare il seguente indice: 
-
 ``` r
 fireindex = fires[[1]] - fires[[2]]
 plot(fireindex)
 ```
 
+Esportare il grafico dell'indice, possiamo usare la funzione png():
+``` r
+png("fireindex.png")
+plot(fireindex)
+dev.off()
+```
 
+The index looks like:
+
+![fireindex](https://github.com/user-attachments/assets/0690737f-e49b-4b94-9178-29ad76804765)
+
+## Correlazione tra le bande
+
+Siccome le RGB sono composte da bande del visibile, mi aspetto che la correlazione sia alta
+``` r
+pairs(fires)
+```
+In questo modo faccio il grafico:
+# ERROREEEEEEEEEEEEE
 
 
 
