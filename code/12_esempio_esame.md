@@ -13,22 +13,22 @@ library(viridis)
 Inserisco dove tovare le immagini sul PC:
 ``` r
 setwd("~C:/Users/User/OneDrive/Documenti/UNI/R")
-fires = rast("fires.jpg")
-plot(fires)
-fires = flip(fires)
-plot(fires)
+dust = rast("dust.jpg
+plot(dust)
+dust = flip(dust)
+plot(dust)
 ```
 
 L'immagine è la seguente:
 
-![fires](https://github.com/user-attachments/assets/e0f07ba3-8883-4b8b-b9e8-8e1a2049f296)
+![dustout](https://github.com/user-attachments/assets/c9e950e6-05ad-463c-89bc-b2d81a808b7d)
 
 ## Data Analisi
 
 Date le immagini raccolte dal sito, possiamo calcolare il seguente indice: 
 ``` r
-fireindex = fires[[1]] - fires[[2]]
-plot(fireindex)
+dustindex = dust[[1]]- dust[[3]]
+plot(dustindex)
 ```
 
 Esportare il grafico dell'indice, possiamo usare la funzione png():
@@ -40,7 +40,7 @@ dev.off()
 
 Il grafico dell'indice:
 
-![fireindex](https://github.com/user-attachments/assets/0690737f-e49b-4b94-9178-29ad76804765)
+![dustindex](https://github.com/user-attachments/assets/1d99d740-0f43-4f7a-b50f-a0ddb78321fe)
 
 ## Correlazione tra le bande
 
