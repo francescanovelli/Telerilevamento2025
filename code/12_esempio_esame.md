@@ -38,7 +38,7 @@ plot(fireindex)
 dev.off()
 ```
 
-The index looks like:
+Il grafico dell'indice:
 
 ![fireindex](https://github.com/user-attachments/assets/0690737f-e49b-4b94-9178-29ad76804765)
 
@@ -51,6 +51,15 @@ pairs(fires)
 In questo modo faccio il grafico:
 # ERROREEEEEEEEEEEEE
 
+## Indice di visualizzazione con viridis
+Visualizzo il grafico dell'inidce con un altra palette di viridis usando il deguente codice:
+``` r
+plot(fireindex, col=inferno(100))
+```
+
+L'immagine è questa:
+
+![inferno](https://github.com/user-attachments/assets/9bab43f4-5374-4e4d-9115-25a1c234fea6)
 
 
 
