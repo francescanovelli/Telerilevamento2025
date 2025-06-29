@@ -13,7 +13,7 @@ library(viridis)
 Inserisco dove tovare le immagini sul PC:
 ``` r
 setwd("~C:/Users/User/OneDrive/Documenti/UNI/R")
-dust = rast("dust.jpg
+dust = rast("dust.jpg)
 plot(dust)
 dust = flip(dust)
 plot(dust)
