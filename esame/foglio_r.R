@@ -14,7 +14,7 @@ Sentinel_NZ25
 # visualize RGB (check the order of the bands)
 plotRGB(Sentinel_NZ25, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel (median), 2025")
 
-Sentinel_NZ19 <- rast("NZ_median_2019.tif")
+Sentinel_NZ19 <- rast("NZ_NIR19.tif")
 Sentinel_NZ19
 Sentinel_NZ20 <- rast("NZ_median_2020.tif")
 Sentinel_NZ20
