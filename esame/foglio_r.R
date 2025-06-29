@@ -1,8 +1,11 @@
 # Mettere le immagini su R
 
 library(terra)
+library(imageRy)
 
 setwd("C:/Users/User/OneDrive/Documenti/UNI/TELERILEVAMENTO")
+
+im.multiframe(1,3)
 
 # import raster
 Sentinel_NZ25 <- rast("NZ_median_2025.tif")
