@@ -1,8 +1,8 @@
 # Importo le immagini su R 
 
 # Apro 2 pacchetti di R che utilizzo per visualizzare le immagini
-library(terra)
-library(imageRy)
+library(terra) # Manipola dati geografici (spaziali) in formato "raster" e "vettore"
+library(imageRy) # Pacchetto per la visualizzazione di immagini raster su R
 
 # Inserisco la directory
 setwd("C:/Users/User/OneDrive/Documenti/UNI/TELERILEVAMENTO")
