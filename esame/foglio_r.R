@@ -21,8 +21,8 @@ Sentinel_NZ20
 
 
 # visualizzo le immagini in RGB 
-plotRGB(Sentinel_NZ25, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel (median), 2025")
+plotRGB(Sentinel_NZ25, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel-2, Mag. 2025")
 
-plotRGB(Sentinel_NZ19, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel (median), 2019")
+plotRGB(Sentinel_NZ19, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel-2, Mag. 2019")
 
-plotRGB(Sentinel_NZ20, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel (median), 2020")
+plotRGB(Sentinel_NZ20, r = 1, g = 2, b = 3, stretch = "lin", main = "Sentinel-2, Mag. 2020")
