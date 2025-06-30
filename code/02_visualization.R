@@ -10,7 +10,7 @@ im.list()
 
 # importare i dati
 im.import()
-b2 <- im.import("sentinel.dolomites.b2.tif")  blu
+b2 <- im.import("sentinel.dolomites.b2.tif")  # blu
 
 # per far cambiare i colori alla foto uso la funzione 
 colorRampPalette()
@@ -20,9 +20,9 @@ cl <- colorRampPalette(c("black","dark grey", "light grey"))(100)
 plot(b2, col=cl)
 
 # si possono avere più bande
-b3 <- im.import("sentinel.dolomites.b3.tif")  verde 
-b4 <- im.import("sentinel.dolomites.b4.tif")  rosso
-b8 <- im.import("sentinel.dolomites.b8.tif")  infrarosso vicino
+b3 <- im.import("sentinel.dolomites.b3.tif") # verde 
+b4 <- im.import("sentinel.dolomites.b4.tif") # rosso
+b8 <- im.import("sentinel.dolomites.b8.tif") # infrarosso vicino
 
 # creo un immagine con 4 bande al suo interno 
 sent <- c(b2, b3, b4, b8)
