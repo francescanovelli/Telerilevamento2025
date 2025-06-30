@@ -1,5 +1,6 @@
-# Mettere le immagini su R
+# Importo le immagini su R 
 
+# Apro 2 pacchetti di R che utilizzo per visualizzare le immagini
 library(terra)
 library(imageRy)
 
