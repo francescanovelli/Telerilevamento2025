@@ -8,13 +8,11 @@ library(viridis) # Cambia la palette di colori sulle immagini raster
 # Inserisco la directory
 setwd("C:/Users/User/OneDrive/Documenti/UNI/TELERILEVAMENTO")
 
-# importo i raster delle 3 immagini scaricate da GEE
+# Importo i raster delle 3 immagini scaricate da GEE
 Sentinel_NZ19 <- rast("NZ_NIR19.tif")
 Sentinel_NZ19
-
 Sentinel_NZ20 <- rast("NZ_NIR20.tif")
 Sentinel_NZ20
-
 Sentinel_NZ25 <- rast("NZ_NIR25.tif")
 Sentinel_NZ25
 
@@ -30,8 +28,3 @@ im.plotRGB(Sentinel_NZ19, r=1, g=4, b=2)
 im.plotRGB(Sentinel_NZ20, r=1, g=4, b=2)
 im.plotRGB(Sentinel_NZ25, r=1, g=4, b=2)
 
-
-im.multiframe(1,3) # Apro un pannello multiframe per poter inserire le tre immagini insieme
-plotRGB(Sentinel_NZ19, r=1, g=4, b=2, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
-plotRGB(Sentinel_NZ20, r=1, g=4, b=2, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
-plotRGB(Sentinel_NZ25, r=1, g=4, b=2, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
