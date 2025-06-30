@@ -28,3 +28,15 @@ im.plotRGB(Sentinel_NZ19, r=1, g=4, b=2)
 im.plotRGB(Sentinel_NZ20, r=1, g=4, b=2)
 im.plotRGB(Sentinel_NZ25, r=1, g=4, b=2)
 
+# Calcolo NDVI, 
+ndvi19= im.ndvi(Sentinel_NZ19, 4, 1)
+ndvi20= im.ndvi(Sentinel_NZ20, 4, 1)
+ndvi25= im.ndvi(Sentinel_NZ25, 4, 1)
+
+im.multiframe(1,3)
+plot(ndvi19, col=viridis(100), main= "NDVI, 2019")
+plot(ndvi20, col=viridis(100), main= "NDVI, 2020")
+plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
+
+
+
