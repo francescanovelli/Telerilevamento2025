@@ -4,6 +4,8 @@
 library(terra) # Manipola dati geografici (spaziali) in formato "raster" e "vettore"
 library(imageRy) # Pacchetto per la visualizzazione di immagini raster su R
 library(viridis) # Cambia la palette di colori sulle immagini raster
+library(ggplot2)
+library(patchwork)
 
 # Inserisco la directory
 setwd("C:/Users/User/OneDrive/Documenti/UNI/TELERILEVAMENTO")
@@ -53,9 +55,10 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
 
-
-nz=c(ndvi19, ndvi20, ndvi25)
-im.ridgeline(nz, scale=2)
+# Classificazione
+cl19= im.classify(Sentinel_NZ19, num_clusters=2)
+cl20= im.classify(Sentinel_NZ20, num_clusters=2)
+cl25= im.classify(Sentinel_NZ25, num_clusters=2)
 
 
 
