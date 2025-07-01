@@ -1,3 +1,11 @@
+// Le immagini sono stare scaricate dal satellite Sentilel-2 da Google Earth Engine
+// Sono immagini che ripendono l'area della costa est dell'isola nord della Nuova Zelanda
+// Si tratta di un'area interessata da siccità nel 2020, confontata con le condizioni di 2019 e 2025
+// Tutte le sei immagini riguardano un periodo che va dal 1° maggio al 31 maggio
+// Le prime tre immagini sono state scaricate con le bande di B4(red), B3(green), B2(blue) e B8(NIR)
+// Le seconde tre immagini sono state scaricate con le bande di B4(red), B3(green) e B2(blue) 
+
+
 # IMMAGINE AREA DI INTERESSE 2025
 
 // ==============================================
