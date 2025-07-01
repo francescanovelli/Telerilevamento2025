@@ -38,3 +38,4 @@ plot(ndvi19, col=viridis(100), main= "NDVI, 2019")
 plot(ndvi20, col=viridis(100), main= "NDVI, 2020")
 plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 
+nz_19c= im.classify(Sentinel_NZ19, num_clusters=2)
