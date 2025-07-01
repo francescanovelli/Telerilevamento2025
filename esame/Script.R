@@ -49,4 +49,14 @@ plot(ndvi19, col=viridis(100), main= "NDVI, 2019")
 plot(ndvi20, col=viridis(100), main= "NDVI, 2020")
 plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 
+# Calcolo la differenza tra NDVI dell'anno 2020 con quello dell'anno 2025
+ndvidif= ndvi20 - ndvi25
+plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
+
+
+nz=c(ndvi19, ndvi20, ndvi25)
+im.ridgeline(nz, scale=2)
+
+
+
 
