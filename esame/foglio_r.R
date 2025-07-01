@@ -8,7 +8,18 @@ library(viridis) # Cambia la palette di colori sulle immagini raster
 # Inserisco la directory
 setwd("C:/Users/User/OneDrive/Documenti/UNI/TELERILEVAMENTO")
 
-# Importo i raster delle 3 immagini scaricate da GEE
+# Importo i raster delle 3 immagini con l'area più grande scaricata da GEE
+Area_19 <- rast("Area19.tif")
+Area_20 <- rast("Area20.tif")
+Area_25 <- rast("Area25.tif")
+
+# visualizzo le immagini in RGB 
+im.multiframe(1,3) # Apro un pannello multiframe per poter inserire le tre immagini insieme
+plotRGB(Area_19, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
+plotRGB(Area_20, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
+plotRGB(Area_25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
+
+# Importo i raster delle 3 immagini sull'area interessata dalla siccità scaricate da GEE
 Sentinel_NZ19 <- rast("NZ_NIR19.tif")
 Sentinel_NZ19
 Sentinel_NZ20 <- rast("NZ_NIR20.tif")
