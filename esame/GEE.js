@@ -6,7 +6,7 @@
 // Le seconde tre immagini sono state scaricate con le bande di B4(red), B3(green) e B2(blue) 
 
 
-# IMMAGINE AREA DI INTERESSE 2025
+// IMMAGINE AREA DI INTERESSE 2025
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
@@ -88,7 +88,7 @@ Export.image.toDrive({
 
 
 
-# IMMAGINE AREA DI INTERESSE 2020
+// IMMAGINE AREA DI INTERESSE 2020
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
@@ -170,7 +170,7 @@ Export.image.toDrive({
 
 
 
-# IMMAGINE AREA DI INTERESSE 2019
+// IMMAGINE AREA DI INTERESSE 2019
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
@@ -252,7 +252,7 @@ Export.image.toDrive({
 
 
 
-# IMMAGINE AREA GRANDE 2025
+// IMMAGINE AREA GRANDE 2025
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
@@ -334,7 +334,7 @@ Export.image.toDrive({
 
 
 
-# IMMAGINE AREA GRANDE 2020
+// IMMAGINE AREA GRANDE 2020
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
@@ -416,7 +416,7 @@ Export.image.toDrive({
 
 
 
-# IMMAGINE AREA GRANDE 2019
+// IMMAGINE AREA GRANDE 2019
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
