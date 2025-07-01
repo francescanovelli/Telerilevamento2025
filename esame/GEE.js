@@ -71,7 +71,7 @@ Export.image.toDrive({
   image: composite.select(['B4', 'B3', 'B2', 'B8']),  // Select NIR band
   description: 'NZNIR',
   folder: 'GEE_exports',                        // Folder in Google Drive
-  fileNamePrefix: 'NZ_NIR',
+  fileNamePrefix: 'NZ_25NIR',
   region: NZ,
   scale: 10,                                    // Sentinel-2 resolution
   crs: 'EPSG:4326',
@@ -153,7 +153,7 @@ Export.image.toDrive({
   image: composite.select(['B4', 'B3', 'B2', 'B8']),  // Select NIR band
   description: 'NZNIR',
   folder: 'GEE_exports',                        // Folder in Google Drive
-  fileNamePrefix: 'NZ_NIR',
+  fileNamePrefix: 'NZ_20NIR',
   region: NZ,
   scale: 10,                                    // Sentinel-2 resolution
   crs: 'EPSG:4326',
@@ -235,7 +235,7 @@ Export.image.toDrive({
   image: composite.select(['B4', 'B3', 'B2', 'B8']),  // Select NIR band
   description: 'NZNIR',
   folder: 'GEE_exports',                        // Folder in Google Drive
-  fileNamePrefix: 'NZ_NIR',
+  fileNamePrefix: 'NZ_19NIR',
   region: NZ,
   scale: 10,                                    // Sentinel-2 resolution
   crs: 'EPSG:4326',
@@ -303,7 +303,7 @@ Map.addLayer(collection, {
 
 // Display the median composite image
 Map.addLayer(composite, {
-  band: ['B4', 'B3', 'B2', 'B8'], 
+  band: ['B4', 'B3', 'B2'], 
   min: 0,
   max: 0.3
 }, 'Median composite');
@@ -314,10 +314,10 @@ Map.addLayer(composite, {
 
 // Export the median composite
 Export.image.toDrive({
-  image: composite.select(['B4', 'B3', 'B2', 'B8']),  // Select NIR band
-  description: 'NZNIR',
+  image: composite.select(['B4', 'B3', 'B2']),  // Select NIR band
+  description: 'NZarea',
   folder: 'GEE_exports',                        // Folder in Google Drive
-  fileNamePrefix: 'NZ_NIR',
+  fileNamePrefix: 'NZ_25',
   region: NZ,
   scale: 10,                                    // Sentinel-2 resolution
   crs: 'EPSG:4326',
@@ -326,7 +326,7 @@ Export.image.toDrive({
 
 
 
-# IMMAGINE AREA DI INTERESSE 2020
+# IMMAGINE AREA GRANDE 2020
 
 // ==============================================
 // Sentinel-2 Surface Reflectance - Cloud Masking and Visualization
@@ -378,14 +378,14 @@ Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
-  band: ['B4', 'B3', 'B2', 'B8'],  // NIR color
+  band: ['B4', 'B3', 'B2'],  // NIR color
   min: 0,
   max: 0.3
 }, 'First image of collection');
 
 // Display the median composite image
 Map.addLayer(composite, {
-  band: ['B4', 'B3', 'B2', 'B8'], 
+  band: ['B4', 'B3', 'B2'], 
   min: 0,
   max: 0.3
 }, 'Median composite');
@@ -396,10 +396,10 @@ Map.addLayer(composite, {
 
 // Export the median composite
 Export.image.toDrive({
-  image: composite.select(['B4', 'B3', 'B2', 'B8']),  // Select NIR band
-  description: 'NZNIR',
+  image: composite.select(['B4', 'B3', 'B2']),  // Select NIR band
+  description: 'NZarea',
   folder: 'GEE_exports',                        // Folder in Google Drive
-  fileNamePrefix: 'NZ_NIR',
+  fileNamePrefix: 'NZ_20',
   region: NZ,
   scale: 10,                                    // Sentinel-2 resolution
   crs: 'EPSG:4326',
@@ -460,14 +460,14 @@ Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
-  band: ['B4', 'B3', 'B2', 'B8'],  // NIR color
+  band: ['B4', 'B3', 'B2'],  // NIR color
   min: 0,
   max: 0.3
 }, 'First image of collection');
 
 // Display the median composite image
 Map.addLayer(composite, {
-  band: ['B4', 'B3', 'B2', 'B8'], 
+  band: ['B4', 'B3', 'B2'], 
   min: 0,
   max: 0.3
 }, 'Median composite');
@@ -479,9 +479,9 @@ Map.addLayer(composite, {
 // Export the median composite
 Export.image.toDrive({
   image: composite.select(['B4', 'B3', 'B2']),  // Select NIR band
-  description: 'NZNIR',
+  description: 'NZarea',
   folder: 'GEE_exports',                        // Folder in Google Drive
-  fileNamePrefix: 'NZ_NIR',
+  fileNamePrefix: 'NZ_19',
   region: NZ,
   scale: 10,                                    // Sentinel-2 resolution
   crs: 'EPSG:4326',
