@@ -55,6 +55,42 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Classificazione
 cl19= im.classify(Sentinel_NZ19, num_clusters=2)
 cl20= im.classify(Sentinel_NZ20, num_clusters=2)
