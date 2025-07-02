@@ -110,6 +110,6 @@ prop19 = f19/tot19
 tot20 = ncell(cl20) 
 prop20 = f20/tot20
 tot25 = ncell(cl25) 
-prop25 = f20/tot25
+prop25 = f25/tot25
 
 
