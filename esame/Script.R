@@ -19,19 +19,18 @@ plotRGB(Area_19, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
 plotRGB(Area_20, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
 plotRGB(Area_25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
 
-# Importo i raster delle 3 immagini sull'area interessata dalla siccità scaricate da GEE e faccio vedere le 4 bande
+# Importo i raster delle 3 immagini sull'area interessata dalla siccità scaricate da GEE 
 Sentinel_NZ19 <- rast("NZ_NIR19.tif")
-plot(Sentinel_NZ19, main=c("B2","B3","B4","B8"), col= cividis(100))
-
 Sentinel_NZ20 <- rast("NZ_NIR20.tif")
-plot(Sentinel_NZ20, main=c("B2","B3","B4","B8"),  col= cividis(100))
-
 Sentinel_NZ25 <- rast("NZ_NIR25.tif")
+
+# faccio vedere le 4 bande
+plot(Sentinel_NZ19, main=c("B2","B3","B4","B8"), col= cividis(100))
+plot(Sentinel_NZ20, main=c("B2","B3","B4","B8"),  col= cividis(100))
 plot(Sentinel_NZ25, main=c("B2","B3","B4","B8"),  col= cividis(100))
 
-
 # visualizzo le immagini in RGB per fare vedere l'immagine con le 3 bande sovrapposte
-im.multiframe(1,3) # Apro un pannello multiframe per poter inserire le tre immagini insieme
+im.multiframe(1,3) 
 plotRGB(Sentinel_NZ19, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
 plotRGB(Sentinel_NZ20, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
 plotRGB(Sentinel_NZ25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
@@ -55,7 +54,6 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 # Calcolo la differenza tra NDVI dell'anno 2020 con quello dell'anno 2025
 ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
-
 
 # Classificazione, faccio la classificazione di un'area molto più piccola
 Sentinel_NZ= rast("NZ_areaclass.tif")
