@@ -77,7 +77,7 @@ plotRGB(Sentinel_NZ25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2
 
 <img src="../Pics/NZ_areapiccola.png" />
 
-### Banda del NIR
+## Banda del NIR
 Per evidenziare la differenza tra suolo nudo e vegetazione ho inserito la banda B8 (NIR) al posto della banda B3 (green). 
 
 ``` r
@@ -117,4 +117,14 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 
 <img src="../Pics/NZ_NDVI.png" />
 
+> Come ci aspettiamo da quanto detto precedentemente, l'immagine del 2020 presenta dei valori vicino allo zero nell'area colpita da siccità.
+
+## Calcolo della differenza tra NDVI dell'anno 2020 e dell'anno 2025
+Calcolando la differenza tra NDVI dell'anno 2020 e dell'anno 2025 ho informazioni su come la copertura vegetale si variata tra le due situazioni: questa differenza indica se la vegetazione è aumentata (differenza positiva) o diminuita (differenza negativa). 
+
+```r
+ndvidif= ndvi20 - ndvi25
+plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
+```
+<img src="../Pics/dif_NDVI.png" />
 
