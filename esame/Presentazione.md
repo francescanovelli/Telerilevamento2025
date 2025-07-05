@@ -76,3 +76,45 @@ plotRGB(Sentinel_NZ25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2
 ```
 
 <img src="../Pics/NZ_areapiccola.png" />
+
+### Banda del NIR
+Per evidenziare la differenza tra suolo nudo e vegetazione ho inserito la banda B8 (NIR) al posto della banda B3 (green). 
+
+``` r
+im.multiframe(1,3)
+im.plotRGB(Sentinel_NZ19, r=1, g=4, b=2)
+im.plotRGB(Sentinel_NZ20, r=1, g=4, b=2)
+im.plotRGB(Sentinel_NZ25, r=1, g=4, b=2)
+```
+
+Le immagini sono nel seguente ordine a partire da sinistra: 2019, 2020 e 2025.
+
+ <img src="../Pics/area_NIR.png" />
+
+> Nell'immagine si può osservare il suolo nudo in rosa e la vegetazione in verde, dove sfumature diverse corrispondono a vegetazioni diverse. Come ci attendiamo dalle premesse, l'immagine del 2020 risulta quella con maggior porzione di suolo nudo.
+
+
+# NDVI, Normalized Difference Vegetation Index
+
+L'NDVI è un indice che sfrutta il diverso comportamento della vegetazione nella riflessione nel rosso e nel NIR per valutare la presenza e lo stato di salute della vegetazione. Si tratta di un indice che va da -1 a +1 perchè è normalizzato, quindi svincolato dalla risoluzione dell'immagine.
++ +1 indica lo stato di massima salute della vegetazione
++ 0 indica la presenza di suolo nudo o assenza di vegetazione
++ -1 indica la presenza di acqua, neve, o altri elementi che non riflettono la luce nello stesso modo della vegetazione
+
+La formula per calcolarlo è la seguente:      $` NDVI = \frac{(NIR - Red)}{(NIR + Red)} `$
+
+
+``` r
+ndvi19= im.ndvi(Sentinel_NZ19, 4, 1)
+ndvi20= im.ndvi(Sentinel_NZ20, 4, 1)
+ndvi25= im.ndvi(Sentinel_NZ25, 4, 1)
+
+im.multiframe(1,3)
+plot(ndvi19, col=viridis(100), main= "NDVI, 2019")
+plot(ndvi20, col=viridis(100), main= "NDVI, 2020")
+plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
+```
+
+<img src="../Pics/NZ_NDVI.png" />
+
+
