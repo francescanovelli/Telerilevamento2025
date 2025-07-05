@@ -120,11 +120,36 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 > Come ci aspettiamo da quanto detto precedentemente, l'immagine del 2020 presenta dei valori vicino allo zero nell'area colpita da siccità.
 
 ## Calcolo della differenza tra NDVI dell'anno 2020 e dell'anno 2025
-Calcolando la differenza tra NDVI dell'anno 2020 e dell'anno 2025 ho informazioni su come la copertura vegetale si variata tra le due situazioni: questa differenza indica se la vegetazione è aumentata (differenza positiva) o diminuita (differenza negativa). 
+Calcolando la differenza tra NDVI dell'anno 2020 e dell'anno 2025 ho informazioni su come la copertura vegetale si variata tra le due situazioni: questa differenza indica se la vegetazione è aumentata (differenza negativa) o diminuita (differenza positiva). 
 
 ```r
 ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
 ```
 <img src="../Pics/dif_NDVI.png" />
+
+## Classificazione
+La funzione di R `im.classify()` permette di classificare i pixel di un'immagine in cluster, in questo caso 2.
+
+```r
+cl20= im.classify(Sentinel_NZ20, num_cluster=2)
+```
+
+<img src="../Pics/class_20.png" />
+
+>[!WARNING]
+>
+> Come possiamo vedere dall'immagine risultante la classificazione non è riuscita per due fattori: la funzione di R opera una classificazione non supervisionata e l'immagine rappresenta un'area molto vasta ed eterogenea. Di conseguenza le soluzioni a questo probelma sono o utilizzare un'area più piccola o utilizzare una classificazione supervisionata.
+
+A dimostrazione di ciò ho scaricato un'ulteriore immagine da GEE di un'area molto più ristretta sempre rappresentate l'area colpita da siccità nel 2020 e l'ho sottoposta a classificazione
+
+```r
+Sentinel_NZ= rast("NZ_areaclass.tif")
+
+im.multiframe(1,2)
+im.plotRGB(Sentinel_NZ, r=1, g=2, b=3)
+clnz= im.classify(Sentinel_NZ, num_clusters=2)
+```
+
+<img src="../Pics/NZ_classarea.png" />
 
