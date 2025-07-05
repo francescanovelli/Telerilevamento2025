@@ -153,3 +153,4 @@ clnz= im.classify(Sentinel_NZ, num_clusters=2)
 
 <img src="../Pics/NZ_classarea.png" />
 
+> La classificazione dell'area ha prodotto un'immagine in due colori, in giallo (Classe 1) la vegetazione e in viola (Classe 2) tutto il resto. 
