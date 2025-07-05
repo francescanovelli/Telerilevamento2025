@@ -56,60 +56,8 @@ ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
 
 
+# Classificazione, faccio la classificazione di un'area molto più piccola
+clnz= im.classify(Sentinel_NZ, num_clusters=2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Classificazione
-cl19= im.classify(Sentinel_NZ19, num_clusters=2)
-cl20= im.classify(Sentinel_NZ20, num_clusters=2)
-cl25= im.classify(Sentinel_NZ25, num_clusters=2)
-
-# calcolo le frequenze, cioè il numero di volte che quella classe compare nel pixel
-f19 = freq(cl19)
-f19
-f20 = freq(cl20)
-f20
-f25 = freq(cl25)
-f25
-
-# calcoliamo le proporzione
-tot19 = ncell(cl19) 
-prop19 = f19/tot19
-tot20 = ncell(cl20) 
-prop20 = f20/tot20
-tot25 = ncell(cl25) 
-prop25 = f25/tot25
 
 
