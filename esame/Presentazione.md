@@ -63,4 +63,16 @@ plot(Sentinel_NZ25, main=c("B2","B3","B4","B8"),  col= cividis(100))
 
 > Avenndo scaricato le immagini dal satiellite Sentinel-2, che lavora in bande, i file che restituisce sono in formato tif e sono suddivisi in bande. Per ottenre un immagine con colori reali è quindi necessario combinare le varie bande.
 >
-> Sono state selezionate le quattro bande elencate prima perchè: le bande B4, B3 e B2 servono per la visualizzazione in RGB, mentre la banda B8 serve per valutare la salute della vegetazione 
+> Sono state selezionate le quattro bande elencate prima perchè: le bande B4, B3 e B2 servono per la visualizzazione in RGB, mentre la banda B8 serve per valutare la salute della vegetazione
+
+---
+
+Visualizzo le immagini in RGB dell'area di studio
+``` r
+im.multiframe(1,3) 
+plotRGB(Sentinel_NZ19, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
+plotRGB(Sentinel_NZ20, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
+plotRGB(Sentinel_NZ25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
+```
+
+<img src="../Pics/NZ_areapiccola.png" />
