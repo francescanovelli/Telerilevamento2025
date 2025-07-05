@@ -61,9 +61,9 @@ plot(Sentinel_NZ25, main=c("B2","B3","B4","B8"),  col= cividis(100))
 ``` 
 <img src="../Pics/Bande_25.png" />
 
-> Avenndo scaricato le immagini dal satiellite Sentinel-2, che lavora in bande, i file che restituisce sono in formato tif e sono suddivisi in bande. Per ottenre un immagine con colori reali è quindi necessario combinare le varie bande.
+> Avenndo scaricato le immagini dal satiellite Sentinel-2, che acquisisce immagini per bande, i file che restituisce sono in formato .tif e sono suddivisi in bande. Per ottenre un'immagine con colori reali è quindi necessario combinare le varie bande.
 >
-> Sono state selezionate le quattro bande elencate prima perchè: le bande B4, B3 e B2 servono per la visualizzazione in RGB, mentre la banda B8 serve per valutare la salute della vegetazione
+> Sono state selezionate le quattro bande elencate prima perchè: le bande B4, B3 e B2 servono per la visualizzazione in RGB, mentre la banda B8 serve per valutare la salute della vegetazione, in quanto le piante sane assorbono la luce visibile e riflettono il NIR, mentre le piante stressate o malate riflettono meno NIR e assorbono più luce visibile. A prova di ciò la banda B8 del 2020 presenta valori più bassi di riflettanza ripetto a quelle del 2019 e 2025 nell'area interessata da siccità.
 
 ---
 
