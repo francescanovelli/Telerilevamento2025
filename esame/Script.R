@@ -65,3 +65,15 @@ im.multiframe(1,2)
 im.plotRGB(Sentinel_NZ, r=1, g=2, b=3)
 clnz= im.classify(Sentinel_NZ, num_clusters=2)
 cl20= im.classify(Sentinel_NZ20, num_cluster=2)
+
+
+#PCA
+nz= c(Sentinel_NZ20[[4]], Sentinel_NZ20[[1]], Sentinel_NZ20[[2]])
+nz_pca = im.pca(nz)
+
+sd_pca = focal(nz_pca[[1]], w=c(3,3), fun="sd")
+
+
+
+
+
