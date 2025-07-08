@@ -55,7 +55,10 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
 
-# Classificazione, faccio la classificazione di un'area molto più piccola
+# Faccio la classificazione dell'area di interesse dell'anno 2020
+cl20= im.classify(Sentinel_NZ20, num_cluster=2)
+
+# Faccio la classificazione di un'area più piccola
 Sentinel_NZ= rast("NZ_areaclass.tif")
 im.multiframe(1,2)
 im.plotRGB(Sentinel_NZ, r=1, g=2, b=3)
