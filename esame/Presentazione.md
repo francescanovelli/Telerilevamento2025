@@ -131,7 +131,8 @@ Calcolando la differenza tra NDVI dell'anno 2020 e dell'anno 2025 ho informazion
 ndvidif= ndvi20 - ndvi25
 plot(ndvidif, col=viridis(100), main="Differenza NDVI '20-'25")
 ```
-<img src="../Pics/dif_NDVI.png" />
+
+![dif_NDVI](https://github.com/user-attachments/assets/6abb5e81-54a7-4db1-86bb-366e747d53ae)
 
 ## Classificazione
 La funzione di R `im.classify()` permette di classificare i pixel di un'immagine in cluster, in questo caso 2.
