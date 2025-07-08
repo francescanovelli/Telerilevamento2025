@@ -60,8 +60,10 @@ plot(Sentinel_NZ20, main=c("B4","B3","B2","B8"),  col= cividis(100))
 ``` r
 Sentinel_NZ25 <- rast("NZ_NIR25.tif")
 plot(Sentinel_NZ25, main=c("B4","B3","B2","B8"),  col= cividis(100))
-``` 
-<img src="../Pics/Bande_25.png" />
+```
+
+![Bande_25](https://github.com/user-attachments/assets/1c48dd29-04e5-4f9e-ac96-d31725e6d6e3)
+
 
 > Avendo scaricato le immagini dal satiellite Sentinel-2, che acquisisce immagini per bande, i file che restituisce sono in formato .tif e sono suddivisi in bande. Per ottenere un'immagine con colori reali è quindi necessario combinare le varie bande.
 >
