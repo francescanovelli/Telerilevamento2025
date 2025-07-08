@@ -53,7 +53,8 @@ plot(Sentinel_NZ19, main=c("B4","B3","B2","B8"), col= cividis(100))
 Sentinel_NZ20 <- rast("NZ_NIR20.tif")
 plot(Sentinel_NZ20, main=c("B4","B3","B2","B8"),  col= cividis(100))
 ```
-<img src="../Pics/Bande_20.png" />
+
+![Bande_20](https://github.com/user-attachments/assets/318c47b1-be3b-45b5-862a-32b6cd52210b)
 
 
 ``` r
