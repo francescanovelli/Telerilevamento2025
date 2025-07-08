@@ -92,6 +92,7 @@ Le immagini sono nel seguente ordine a partire da sinistra: 2019, 2020 e 2025.
  <img src="../Pics/area_NIR.png" />
 
 > Nell'immagine si può osservare il suolo nudo in rosa e la vegetazione in verde, dove sfumature diverse corrispondono a vegetazioni diverse. Come ci attendiamo dalle premesse, l'immagine del 2020 risulta quella con maggior porzione di suolo nudo.
+> La vegetazione appare verde in quanto la banda del NIR è stata posizionata al posto della banda verde
 
 
 ## NDVI, Normalized Difference Vegetation Index
