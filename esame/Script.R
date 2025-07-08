@@ -25,9 +25,9 @@ Sentinel_NZ20 <- rast("NZ_NIR20.tif")
 Sentinel_NZ25 <- rast("NZ_NIR25.tif")
 
 # faccio vedere le 4 bande
-plot(Sentinel_NZ19, main=c("B2","B3","B4","B8"), col= cividis(100))
-plot(Sentinel_NZ20, main=c("B2","B3","B4","B8"),  col= cividis(100))
-plot(Sentinel_NZ25, main=c("B2","B3","B4","B8"),  col= cividis(100))
+plot(Sentinel_NZ19, main=c("B4","B3","B2","B8"), col= cividis(100))
+plot(Sentinel_NZ20, main=c("B4","B3","B2","B8"),  col= cividis(100))
+plot(Sentinel_NZ25, main=c("B4","B3","B2","B8"),  col= cividis(100))
 
 # visualizzo le immagini in RGB per fare vedere l'immagine con le 3 bande sovrapposte
 im.multiframe(1,3) 
