@@ -1,9 +1,9 @@
 # **Esame telerilevamento geologico in R (09/07/2025)**
-## Nuova Zelanda: La siccità della costa est nel 2020 e confonto prima e dopo 
+## Nuova Zeland: la siccità della costa est nel 2020 e confonto prima e dopo 
 Francesca Novelli
 
 ## Introduzione
-L'area di interesse del progetto è la Nuova Zelanda, in particolare la costa est dell'isola Nord: lo scopo è quello di confrontare l'anno 2020, in cui l'area di interesse è stata colpita da una forte siccità, con gli anni del 2019,cioè l'anno pre-siccità, e del 2025, cioè lo stato attuale. 
+L'area di interesse del progetto è la Nuova Zelanda, in particolare la costa est dell'isola Nord: lo scopo è quello di confrontare l'anno 2020, in cui l'area di interesse è stata colpita da una forte siccità, con gli anni del 2019, cioè l'anno pre-siccità, e del 2025, cioè lo stato attuale. 
 
 Le immagini utilizzate sono prese dal satellite Sentinel-2 e sono una mediana del preiodo dal 1° al 31 maggio dei ripettivi anni (2019, 2020 e 2025). 
 
@@ -157,5 +157,5 @@ clnz= im.classify(Sentinel_NZ, num_clusters=2)
 > La classificazione dell'area ha prodotto un'immagine in due colori, in giallo (Classe 1) la vegetazione e in viola (Classe 2) tutto il resto. 
 
 ## Conclusioni 
-- Dall'analisi delle immagini possiamo concludere che la vegetazione dal 2019 al 2020 è dimunuita notevolmente, permettendo di individuare facilmente le zone colpite dalla siccità. Nonostante questo però la vegetazione nel 2025 appare nettamente in ripresa, anche rispetto alla situazione pre-impatto del 2019. 
+- Dall'analisi delle immagini possiamo concludere che la vegetazione dal 2019 al 2020 è diminuita notevolmente, permettendo di individuare facilmente le zone colpite dalla siccità. Nonostante questo però la vegetazione nel 2025 appare nettamente in ripresa, anche rispetto alla situazione pre-impatto del 2019. 
 - Per quanto riguarda la classificazione si potrebbe ottenere un risultato più accurato effettuando una classificazione supervisionata con selezione manuale dei pixel suddividendoli nei vari cluster. 
