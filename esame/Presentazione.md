@@ -44,20 +44,20 @@ Per l'analisi dati successiva ho scelto di selezionare un'area più piccola che 
 
 ``` r
 Sentinel_NZ19 <- rast("NZ_NIR19.tif")
-plot(Sentinel_NZ19, main=c("B2","B3","B4","B8"), col= cividis(100))
+plot(Sentinel_NZ19, main=c("B4","B3","B2","B8"), col= cividis(100))
 ``` 
 <img src="../Pics/Bande_19.png" />
 
 ``` r
 Sentinel_NZ20 <- rast("NZ_NIR20.tif")
-plot(Sentinel_NZ20, main=c("B2","B3","B4","B8"),  col= cividis(100))
+plot(Sentinel_NZ20, main=c("B4","B3","B2","B8"),  col= cividis(100))
 ```
 <img src="../Pics/Bande_20.png" />
 
 
 ``` r
 Sentinel_NZ25 <- rast("NZ_NIR25.tif")
-plot(Sentinel_NZ25, main=c("B2","B3","B4","B8"),  col= cividis(100))
+plot(Sentinel_NZ25, main=c("B4","B3","B2","B8"),  col= cividis(100))
 ``` 
 <img src="../Pics/Bande_25.png" />
 
