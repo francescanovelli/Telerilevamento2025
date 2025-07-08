@@ -46,7 +46,8 @@ Per l'analisi dati successiva ho scelto di selezionare un'area più piccola che 
 Sentinel_NZ19 <- rast("NZ_NIR19.tif")
 plot(Sentinel_NZ19, main=c("B4","B3","B2","B8"), col= cividis(100))
 ``` 
-<img src="../Pics/Bande_19.png" />
+
+![Bande_19](https://github.com/user-attachments/assets/2fd368c1-f54f-445b-87a7-7709588683cc)
 
 ``` r
 Sentinel_NZ20 <- rast("NZ_NIR20.tif")
