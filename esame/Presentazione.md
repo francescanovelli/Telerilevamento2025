@@ -121,7 +121,7 @@ plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
 > Come ci aspettiamo da quanto detto precedentemente, l'immagine del 2020 presenta dei valori vicino allo zero nell'area colpita da siccità.
 
 ## Calcolo della differenza tra NDVI dell'anno 2020 e dell'anno 2025
-Calcolando la differenza tra NDVI dell'anno 2020 e dell'anno 2025 ho informazioni su come la copertura vegetale si variata tra le due situazioni: questa differenza indica se la vegetazione è aumentata (differenza negativa) o diminuita (differenza positiva). 
+Calcolando la differenza tra NDVI dell'anno 2020 e dell'anno 2025 ho informazioni su come la copertura vegetale sia variata tra le due situazioni: questa differenza indica se la vegetazione è aumentata (differenza negativa) o diminuita (differenza positiva). 
 
 ```r
 ndvidif= ndvi20 - ndvi25
