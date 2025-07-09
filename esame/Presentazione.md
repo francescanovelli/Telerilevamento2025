@@ -163,4 +163,5 @@ clnz= im.classify(Sentinel_NZ, num_clusters=2)
 
 ## Conclusioni 
 - Dall'analisi delle immagini possiamo concludere che la vegetazione dal 2019 al 2020 è diminuita notevolmente, permettendo di individuare facilmente le zone colpite dalla siccità. Nonostante questo però la vegetazione nel 2025 appare nettamente in ripresa, anche rispetto alla situazione pre-impatto del 2019. 
+- Sia dall'analisi degli indici spettrali come il calcolo del NDVI sia dall'analisi multitemporale della differenza del NDVI, si può vedere la siccità che ha colpito l'area nel 2020 ma la sostituzione della banda B3 green con la banda B8 NIR ha sicuramente accentuato maggiormente la differenza tra vegetazione e suolo nudo mettendo in risalto l'area colpita da siccità.
 - Per quanto riguarda la classificazione si potrebbe ottenere un risultato più accurato effettuando una classificazione supervisionata con selezione manuale dei pixel suddividendoli nei vari cluster. 
