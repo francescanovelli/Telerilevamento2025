@@ -18,6 +18,7 @@ im.multiframe(1,3) # Apro un pannello multiframe per poter inserire le tre immag
 plotRGB(Area_19, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
 plotRGB(Area_20, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
 plotRGB(Area_25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
+dev.off() # Funzione che utilizzo per chiudere il pannello multiframe
 
 # Importo i raster delle 3 immagini sull'area interessata dalla siccità scaricate da GEE 
 Sentinel_NZ19 <- rast("NZ_NIR19.tif")
@@ -34,12 +35,14 @@ im.multiframe(1,3)
 plotRGB(Sentinel_NZ19, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2019")
 plotRGB(Sentinel_NZ20, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2020")
 plotRGB(Sentinel_NZ25, r=1, g=2, b=3, stretch= "lin", main= "Sentilenl-2, Mag. 2025")
+dev.off()
 
 # visualizzo le immagini con la banda del NIR al posto della banda del verde
 im.multiframe(1,3)
 im.plotRGB(Sentinel_NZ19, r=1, g=4, b=2)
 im.plotRGB(Sentinel_NZ20, r=1, g=4, b=2)
 im.plotRGB(Sentinel_NZ25, r=1, g=4, b=2)
+dev.off()
 
 # Calcolo NDVI, e creo un immagine con tutti e 3 gli NDVI   
 ndvi19= im.ndvi(Sentinel_NZ19, 4, 1)
@@ -50,6 +53,7 @@ im.multiframe(1,3)
 plot(ndvi19, col=viridis(100), main= "NDVI, 2019")
 plot(ndvi20, col=viridis(100), main= "NDVI, 2020")
 plot(ndvi25, col=viridis(100), main= "NDVI, 2025")
+dev.off()
 
 # Calcolo la differenza tra NDVI dell'anno 2020 con quello dell'anno 2025
 ndvidif= ndvi20 - ndvi25
@@ -64,6 +68,7 @@ im.multiframe(1,2)
 im.plotRGB(Sentinel_NZ, r=1, g=2, b=3)
 clnz= im.classify(Sentinel_NZ, num_clusters=2)
 cl20= im.classify(Sentinel_NZ20, num_cluster=2)
+dev.off()
 
 
 
