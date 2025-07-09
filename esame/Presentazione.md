@@ -5,7 +5,7 @@ Francesca Novelli
 ## Introduzione
 L'area di interesse del progetto è la Nuova Zelanda, in particolare la costa est dell'isola Nord: lo scopo è quello di confrontare e analizzare le immagini dell'anno 2020, in cui l'area di interesse è stata colpita da una forte siccità, con le immagini degli anni del 2019, cioè l'anno pre-siccità, e del 2025, cioè lo stato attuale. 
 
-Le immagini utilizzate sono prese dal satellite Sentinel-2 e sono una mediana del preiodo dal 1° al 31 maggio dei ripettivi anni (2019, 2020 e 2025). 
+Le immagini utilizzate sono prese dal satellite Sentinel-2 e sono una mediana del periodo dal 1° al 31 maggio dei rispettivi anni (2019, 2020 e 2025). 
 
 ## Raccolta Dati
 I dati sono stati presi dal seguente sito: [Google Earth Engine](https://earthengine.google.com/)
