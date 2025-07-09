@@ -145,7 +145,7 @@ cl20= im.classify(Sentinel_NZ20, num_cluster=2)
 
 >[!WARNING]
 >
-> Come possiamo vedere dall'immagine risultante la classificazione non è riuscita per due fattori: la funzione di R opera una classificazione non supervisionata e l'immagine rappresenta un'area molto vasta ed eterogenea. Di conseguenza le soluzioni a questo probelma sono o utilizzare un'area più piccola o utilizzare una classificazione supervisionata.
+> Come possiamo vedere dall'immagine risultante la classificazione non è riuscita per due fattori: la funzione di R opera una classificazione non supervisionata e l'immagine rappresenta un'area molto vasta ed eterogenea. Di conseguenza le soluzioni a questo problema sono o utilizzare un'area più piccola o utilizzare una classificazione supervisionata.
 
 A dimostrazione di ciò ho scaricato un'ulteriore immagine da GEE di un'area molto più ristretta sempre rappresentante l'area colpita da siccità nel 2020 e l'ho sottoposta a classificazione
 
