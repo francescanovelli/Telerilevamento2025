@@ -54,7 +54,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10);
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
@@ -136,7 +136,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10); 
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
@@ -218,7 +218,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10); 
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
@@ -300,7 +300,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10); 
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
@@ -382,7 +382,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10); 
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
@@ -464,7 +464,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10); 
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
@@ -546,7 +546,7 @@ var composite = collection.median().clip(NZ);
 // Visualization on the Map
 // ==============================================
 
-Map.centerObject(NZ, 10); // Zoom to the pinetapreNIR
+Map.centerObject(NZ, 10);
 
 // Display the first image of the collection (GEE does this by default)
 Map.addLayer(collection, {
