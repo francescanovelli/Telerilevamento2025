@@ -1,9 +1,9 @@
-# **Esame telerilevamento geologico in R (09/07/2025)**
-## Nuova Zelanda: la siccità della costa est nel 2020 e confonto prima e dopo 
+# **Esame telerilevamento geo-ecologico in R (09/07/2025)**
+## Nuova Zelanda: la siccità della costa est nel 2020 
 Francesca Novelli
 
 ## Introduzione
-L'area di interesse del progetto è la Nuova Zelanda, in particolare la costa est dell'isola Nord: lo scopo è quello di confrontare l'anno 2020, in cui l'area di interesse è stata colpita da una forte siccità, con gli anni del 2019, cioè l'anno pre-siccità, e del 2025, cioè lo stato attuale. 
+L'area di interesse del progetto è la Nuova Zelanda, in particolare la costa est dell'isola Nord: lo scopo è quello di confrontare e analizzare le immagini dell'anno 2020, in cui l'area di interesse è stata colpita da una forte siccità, con le immagini degli anni del 2019, cioè l'anno pre-siccità, e del 2025, cioè lo stato attuale. 
 
 Le immagini utilizzate sono prese dal satellite Sentinel-2 e sono una mediana del preiodo dal 1° al 31 maggio dei ripettivi anni (2019, 2020 e 2025). 
 
